@@ -8,6 +8,8 @@ URL:		https://pypi.org/project/passlib/
 Source0:	https://files.pythonhosted.org/packages/source/p/passlib/passlib-%{version}.tar.gz
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
 
 BuildArch:	noarch
 
@@ -19,6 +21,12 @@ designed to be useful for a wide range of tasks, from verifying a hash
 found in /etc/shadow, to providing full-strength password hashing for
 multi-user application.
 
+%files
+%{py_sitedir}/passlib
+%{py_sitedir}/passlib-*.*-info
+
+#--------------------------------------------------------------------
+
 %prep
 %autosetup -p1 -n passlib-%{version}
 
@@ -28,6 +36,3 @@ multi-user application.
 %install
 %py_install
 
-%files
-%{py_sitedir}/passlib
-%{py_sitedir}/passlib-*.*-info
