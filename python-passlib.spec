@@ -1,7 +1,7 @@
 Summary:	comprehensive password hashing framework supporting over 30 schemes
 Name:		python-passlib
 Version:	1.7.4
-Release:	2
+Release:	3
 License:	BSD
 Group:		Development/Python
 URL:		https://pypi.org/project/passlib/
