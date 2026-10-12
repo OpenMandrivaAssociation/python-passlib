@@ -4,7 +4,7 @@
 Name:		python-passlib
 Summary:	Comprehensive password hashing framework supporting over 30 schemes
 Version:	1.9.3
-Release:	1
+Release:	2
 License:	BSD-2-Clause
 Group:		Development/Python
 # Use the maintained fork
